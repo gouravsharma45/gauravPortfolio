@@ -89,7 +89,7 @@ const Hero = () => {
           <div className="w-72 h-72 md:w-96 md:h-96 mx-auto bg-gradient-to-br from-primary-500 to-accent-500 rounded-full p-1 shadow-2xl shadow-primary-500/20">
             <div className="w-full h-full bg-dark-900 rounded-full overflow-hidden border-4 border-dark-900">
               <img 
-                src="./public/gourav.jpg" 
+                src="/gourav.jpg" 
                 alt="Gourav Sharma" 
                 className="w-full h-full object-cover opacity-90 hover:opacity-100 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500"
               />
