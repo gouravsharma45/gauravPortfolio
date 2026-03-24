@@ -2,11 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 
+import libraryTrackerImg from '../assets/projects/libraryTracker.png';
+import powerbiDashboardImg from '../assets/projects/powerbi_dashboard_1774375396673.png';
+import evAnalysisImg from '../assets/projects/ev_analysis_1774375430227.png';
+
 const projects = [
   {
     title: 'Library Tracker',
     description: 'A comprehensive system to track library inventory, user borrowings, and analytics on popular books.',
     tags: ['Python', 'SQL', 'Pandas'],
+    image: libraryTrackerImg,
     link: '#',
     github: '#'
   },
@@ -14,6 +19,7 @@ const projects = [
     title: 'PowerBI Dashboard',
     description: 'Interactive business intelligence dashboard for sales forecasting and customer segmentation analysis.',
     tags: ['PowerBI', 'DAX', 'Data Modeling'],
+    image: powerbiDashboardImg,
     link: '#',
     github: '#'
   },
@@ -21,6 +27,7 @@ const projects = [
     title: 'Electric Vehicle Analysis',
     description: 'Deep dive into EV market trends, battery efficiency prediction using ML models, and infrastructure mapping.',
     tags: ['Machine Learning', 'Scikit-Learn', 'Python'],
+    image: evAnalysisImg,
     link: '#',
     github: '#'
   }
@@ -50,13 +57,20 @@ const Projects = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-dark-900 rounded-2xl overflow-hidden border border-dark-700 hover:border-primary-500/50 transition-all group hover:-translate-y-2"
+              className="bg-dark-900 rounded-2xl overflow-hidden border border-dark-700 hover:border-primary-500/50 transition-all group hover:-translate-y-2 flex flex-col"
             >
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary-400 transition-colors">
+              <div className="w-full h-48 overflow-hidden bg-dark-800">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6 md:p-8 flex-1 flex flex-col">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary-400 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-slate-400 mb-6 min-h-[80px]">
+                <p className="text-slate-400 mb-6 flex-1 text-sm md:text-base">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">

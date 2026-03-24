@@ -16,9 +16,9 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto mb-10 rounded-full"></div>
-          
+
           <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-8">
-            I am a passionate Data Scientist dedicated to solving complex problems through data. With a strong foundation in Machine Learning, Deep Learning, and statistical analysis, I specialize in extracting meaningful patterns from large datasets.
+            I am a passionate Data Analyst dedicated to solving complex problems through data. With a strong foundation in Machine Learning, Deep Learning, and statistical analysis, I specialize in extracting meaningful patterns from large datasets.
           </p>
           <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-8">
             My experience spans across Python-based data ecosystems, crafting predictive models, and building insightful dashboards to drive data-informed decisions. I am constantly learning and adapting to the latest advancements in AI and data technologies.
@@ -27,8 +27,8 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 text-center justify-center">
             {[
-              { label: 'Projects', value: '15+' },
-              { label: 'Models Deployed', value: '10+' },
+              { label: 'Projects', value: '3+' },
+              { label: 'Models Deployed', value: '1+' },
               { label: 'Coffee Consumed', value: '∞' }
             ].map((stat, index) => (
               <motion.div
